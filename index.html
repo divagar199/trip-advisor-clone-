@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>TripAdvisorClone</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <!-- main header -->
+        <div class="header__main">
+            <div class="logo__header"><img src="images/wordmark.svg" alt="logo"></div>
+            <div class="sub__header">
+                <p>Discover</p>
+                <p>Trips</p>
+                <p>Reviews</p>
+                <p>More</p>
+            </div>
+            <div class="signin__header">
+                <i class="fa-solid fa-indian-rupee-sign" style="color: #000000;"></i>
+                <div class="currency__converter">INR</div>
+                <div class="signin__header--green">Sign in</div>
+            </div>
+        </div>
+        <!-- main header ends -->
+        <!-- sub main header -->
+        <div class="sub__main__header">
+
+            <h1 class="sub__main__header--maincontent">Where to?</h1>
+
+            <div class="sub__main__header--bottom">
+                <p><i class="fa-regular fa-house" style="color: #000000;"></i> Search All</p>
+                <p><i class="fa-solid fa-bed" style="color: #000000;"></i>Hotels</p>
+                <p><i class="fa-regular fa-camera" style="color: #000000;"></i> Things to Do</p>
+                <p><i class="fa-solid fa-utensils" style="color: #000000;"></i>Restaurants</p>
+            </div>
+
+            <div class="sub__main__header--searchbar">
+                <i class="fa-solid fa-magnifying-glass" style="color: #002B11;"></i>
+                <input type="text" placeholder="Search destinations, attractions, hotels...">
+                <div class="search__button">Search</div>
+
+            </div>
+        </div>
+    </header>
+    <!-- header ends -->
+    <!-- body content -->
+    <main>
+        <!-- video--box with hover effect -->
+        <div class="main-1">
+            <div class="content-wrapper">
+                <div class="image-box">
+                    <video class="box-video" src="images/main--video.mp4" controls loop muted autoplay
+                        poster="images/main-video-cover.jpg">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="image-overlay">@Divagar</div>
+                </div>
+                <div class="text-box">
+                    <div class="content-state-1">
+                        <h2>Find things to do for everything you're into</h2>
+                        <p>Browse 400,000+ experiences and book with us.</p>
+                        <button class="book-now-button">Book now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-player-section" style="display: none;">
+                <h3>Video Player (Now integrated into the main box)</h3>
+            </div>
+        </div>
+        <!--  video--box with hover effect ends -->
+        <!-- interest-boxes -->
+        <section class="interest-section">
+            <div class="section-header">
+                <h1>Find things to do by interest</h1>
+                <p>Whatever you're into, we've got it</p>
+            </div>
+
+            <div class="card-grid">
+                <a href="#" class="interest-card outdoors-card">
+                    <div class="card-label">Outdoors</div>
+                </a>
+
+                <a href="#" class="interest-card food-card">
+                    <div class="card-label">Food</div>
+                </a>
+
+                <a href="#" class="interest-card culture-card">
+                    <div class="card-label">Culture</div>
+                </a>
+
+                <a href="#" class="interest-card water-card">
+                    <div class="card-label">Water</div>
+                </a>
+            </div>
+        </section>
+        
+        <!-- interest-boxes ends -->
+        <!-- nearest places section -->
+        <section class="experiences-section">
+            <div class="section-header">
+                <h2>Explore experiences near Chennai (Madras)</h2>
+                <p>Can't-miss picks near you</p>
+            </div>
+
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-image-wrapper">
+                        <img src="images/mahabalipuream-box.jpg" alt="Description of the experience">
+                        <span class="badge">Likely to Sell Out</span>
+                        <button class="wishlist-button" aria-label="Add to wishlist">&#x2764;</button>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Mahabalipuram Private tour from Chennai by car with guide and lunch
+                            by
+                            Wonder</h3>
+                        <div class="card-rating">
+                            <div class="rating-value">4.9</div>
+                            <span class="stars">★★★★★</span>
+                            <span class="review-count">(107)</span>
+                        </div>
+                        <div class="card-price">
+                            <span class="price-value">from ₹11,434 per adult</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image-wrapper">
+                        <img src="images/food-box.jpg" alt="Description of the experience">
+                        <span class="badge">Best Seller</span>
+                        <button class="wishlist-button" aria-label="Add to wishlist">&#x2764;</button>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Total Chennai city tour in Private car with guide & lunch by Wonder tours
+                        </h3>
+                        <div class="card-rating">
+                            <div class="rating-value">4.9</div>
+                            <span class="stars">★★★★★☆</span>
+                            <span class="review-count">(64)</span>
+                        </div>
+                        <div class="card-price">
+                            <span class="price-value">from ₹5,031 per adult</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image-wrapper">
+                        <img src="images/street-food-box3.jpg" alt="Description of the experience">
+                        <span class="badge">Popular</span>
+                        <button class="wishlist-button" aria-label="Add to wishlist">&#x2764;</button>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Sowcarpet Street Food Walking Tour in Chennai with guide</h3>
+                        <div class="card-rating">
+                            <div class="rating-value">5.0</div>
+                            <span class="stars">★★★★★</span>
+                            <span class="review-count">(67)</span>
+                        </div>
+                        <div class="card-price">
+                            <span class="price-value">from ₹4,116 per adult</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image-wrapper">
+                        <img src="images/wild-box-4.jpg" alt="Description of the experience">
+                        <span class="badge">Highly Rated</span>
+                        <button class="wishlist-button" aria-label="Add to wishlist">&#x2764;</button>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Wild life tour in Chennai with guide and private car</h3>
+                        <div class="card-rating">
+                            <div class="rating-value">4.8</div>
+                            <span class="stars">★★★★☆</span>
+                            <span class="review-count">(76)</span>
+                        </div>
+                        <div class="card-price">
+                            <span class="price-value">from ₹11,434 per adult</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image-wrapper">
+                        <img src="images/pondicherry-box-5.jpg" alt="Description of the experience">
+                        <span class="badge">New</span>
+                        <button class="wishlist-button" aria-label="Add to wishlist">&#x2764;</button>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Pondicherry day trip from Chennai by Wonder tours</h3>
+                        <div class="card-rating">
+                            <div class="rating-value">4.9</div>
+                            <span class="stars">★★★★☆</span>
+                            <span class="review-count">(54)</span>
+                        </div>
+                        <div class="card-price">
+                            <span class="price-value">from ₹15,459 per adult</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image-wrapper">
+                        <img src="images/georgetown-box-6.jpg" alt="Description of the experience">
+                        <span class="badge">Top Rated</span>
+                        <button class="wishlist-button" aria-label="Add to wishlist">&#x2764;</button>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Georgetown heritage walking tour in Chennai about the founding of Chennai
+                        </h3>
+                        <div class="card-rating">
+                            <div class="rating-value">4.9</div>
+                            <span class="stars">★★★★☆</span>
+                            <span class="review-count">(131)</span>
+                        </div>
+                        <div class="card-price">
+                            <span class="price-value">from ₹4,574 per adult</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image-wrapper">
+                        <img src="images/british-archutecture-box-7.jpg" alt="Description of the experience">
+                        <span class="badge">Recommended</span>
+                        <button class="wishlist-button" aria-label="Add to wishlist">&#x2764;</button>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">British Architecture Walk, an immersive walking tour in Chennai</h3>
+                        <div class="card-rating">
+                            <div class="rating-value">4.8</div>
+                            <span class="stars">★★★★☆</span>
+                            <span class="review-count">(67)</span>
+                        </div>
+                        <div class="card-price">
+                            <span class="price-value">from ₹5,031 per adult</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image-wrapper">
+                        <img src="images/kanchipuram-box-9.jpg" alt="Description of the experience">
+                        <span class="badge">Excellent</span>
+                        <button class="wishlist-button" aria-label="Add to wishlist">&#x2764;</button>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Mahabalipuram & Kanchipuram by tourism ministry approved company</h3>
+                        <div class="card-rating">
+                            <div class="rating-value">4.8</div>
+                            <span class="stars">★★★★☆</span>
+                            <span class="review-count">(272)</span>
+                        </div>
+                        <div class="card-price">
+                            <span class="price-value">from ₹12,349 per adult</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image-wrapper">
+                        <img src="images/mahabalipuram-box-8.jpg" alt="Description of the experience">
+                        <span class="badge">Cultural</span>
+                        <button class="wishlist-button" aria-label="Add to wishlist">&#x2764;</button>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Mahabalipuram tour by Tourism Ministry approved company</h3>
+                        <div class="card-rating">
+                            <div class="rating-value">5.0</div>
+                            <span class="stars">★★★★☆</span>
+                            <span class="review-count">(337)</span>
+                        </div>
+                        <div class="card-price">
+                            <span class="price-value">from ₹9,147 per adult</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </section>
+        <!-- nearest places section end -->
+        <!-- interest boxes -->
+         <section class="interest-section">
+            <div class="section-header">
+                <h1>Find things to do by interest</h1>
+                <p>Whatever you're into, we've got it</p>
+            </div>
+
+            <div class="card-grid">
+                <a href="#" class="interest-card beach-card">
+                    <div class="card-label">Beach</div>
+                </a>
+
+                <a href="#" class="interest-card mountain-card">
+                    <div class="card-label">Mountain</div>
+                </a>
+
+                <a href="#" class="interest-card historical-card">
+                    <div class="card-label">Historical</div>
+                </a>
+
+                <a href="#" class="interest-card tours-card">
+                    <div class="card-label">City Tours</div>
+                </a>
+            </div>
+        </section>
+        <!-- interest boxes end -->
+        <!-- best hotels and restaurants section -->
+        <section class="experiences-section">
+            <div class="section-header">
+                <h2>Best Restaurants in Chennai (Madras)</h2>
+                <p>Highly rated places to eat</p>
+            </div>
+
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-image-wrapper">
+                        <img src="images/the-waterfall-restaurant.jpg" alt="Description of the experience">
+                        <span class="badge">The Waterfall Restaurant</span>
+                        <button class="wishlist-button" aria-label="Add to wishlist">&#x2764;</button>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Nature-themed multicuisine restaurant, with waterfalls & caves in the
+                            decor.</h3>
+                        <div class="card-rating">
+                            <div class="rating-value">4.1</div>
+                            <span class="stars">★★★★☆</span>
+                            <span class="review-count">(10857)</span>
+                        </div>
+                        <div class="card-price">
+                            <span class="price-value"> <a href="https://share.google/GDpJQzE4h8YYKzA68" target="_blank"><button>Site</button></a><br>| Family restaurant|
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image-wrapper">
+                        <img src="images/Broken Bridge Cafe Indian Restaurant.jpg" alt="Description of the experience">
+                        <span class="badge">Broken Bridge Cafe Indian Restaurant</span>
+                        <button class="wishlist-button" aria-label="Add to wishlist">&#x2764;</button>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Inventive fusion Indian & continental fare served in a light-filled space
+                            with outdoor seating.</h3>
+                        <div class="card-rating">
+                            <div class="rating-value">4.6</div>
+                            <span class="stars">★★★★★☆</span>
+                            <span class="review-count">(2964)</span>
+                        </div>
+                        <div class="card-price">
+                            <span class="price-value"> <a href="https://share.google/t3eic497bcoFoBb1F" target="_blank"><button>Site</button></a><br>| Indian restaurant|
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image-wrapper">
+                        <img src="images/avartana.jpg" alt="Description of the experience">
+                        <span class="badge">Avartana</span>
+                        <button class="wishlist-button" aria-label="Add to wishlist">&#x2764;</button>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Elevated South Indian dishes are served in this upscale restaurant inside
+                            a luxury hotel.</h3>
+                        <div class="card-rating">
+                            <div class="rating-value">4.7</div>
+                            <span class="stars">★★★★☆</span>
+                            <span class="review-count">(6675)</span>
+                        </div>
+                        <div class="card-price">
+                            <span class="price-value"> <a href="https://share.google/UUA5cpVTKgjA0BSTq" target="_blank"><button>Site</button></a><br>| South Indian
+                                restaurant | </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image-wrapper">
+                        <img src="images/Pumpkin.jpg" alt="Description of the experience">
+                        <span class="badge">Pumpkin Tales Restaurant</span>
+                        <button class="wishlist-button" aria-label="Add to wishlist">&#x2764;</button>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Singaporean, American, Continental & European cuisines in a cheerful,
+                            brightly lit ambience.</h3>
+                        <div class="card-rating">
+                            <div class="rating-value">4.6</div>
+                            <span class="stars">★★★★☆</span>
+                            <span class="review-count">(7566)</span>
+                        </div>
+                        <div class="card-price">
+                            <span class="price-value"> <a href="https://share.google/1ZLyxtTMSXDDLS2hz"target="_blank"><button>Site</button></a><br>| South Indian
+                                restaurant | </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image-wrapper">
+                        <img src="images/On DE Roof Restaurant (chennai).jpg" alt="Description of the experience">
+                        <span class="badge">On DE Roof Restaurant</span>
+                        <button class="wishlist-button" aria-label="Add to wishlist">&#x2764;</button>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">A Rooftop restaurant with a blissful ambience</h3>
+                        <div class="card-rating">
+                            <div class="rating-value">4.2</div>
+                            <span class="stars">★★★★☆</span>
+                            <span class="review-count">(3554)</span>
+                        </div>
+                        <div class="card-price">
+                            <span class="price-value"> <a href="https://share.google/g95kcKundnk0yMpmj" target="_blank"><button>Site</button></a><br>| Chinese Restaurant
+                                | </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image-wrapper">
+                        <img src="images/Annalakshmi Restaurant.jpg" alt="Description of the experience">
+                        <span class="badge">Annalakshmi Restaurant</span>
+                        <button class="wishlist-button" aria-label="Add to wishlist">&#x2764;</button>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Temple-themed vegetarian restaurant offering northern and southern Indian
+                            fare, plus Jain cuisine.</h3>
+
+                        <div class="card-rating">
+                            <div class="rating-value">4.5</div>
+                            <span class="stars">★★★★☆</span>
+                            <span class="review-count">(12131)</span>
+                        </div>
+                        <div class="card-price">
+                            <span class="price-value"> <a href="https://share.google/h9ptrVQhRhuPxuysn" target="_blank"><button>Site</button></a><br>| Vegetarian
+                                restaurant | </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image-wrapper">
+                        <img src="images/Sea Tales Restaurant.jpg" alt="Description of the experience">
+                        <span class="badge">Sea Tales Restaurant</span>
+                        <button class="wishlist-button" aria-label="Add to wishlist">&#x2764;</button>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Sea Tales Restaurant Chennai, Injambakkam; View reviews, menu, contact,
+                            location, and more for Sea Tales Restaurant Restaurant.</h3>
+                        <div class="card-rating">
+                            <div class="rating-value">4.6</div>
+                            <span class="stars">★★★★☆</span>
+                            <span class="review-count">(5667)</span>
+                        </div>
+                        <div class="card-price">
+                            <span class="price-value"> <a href="https://share.google/1xhY7K1HvHGm1QdNp" target="_blank"><button>Site</button></a><br>| Seafood restaurant
+                                | </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image-wrapper">
+                        <img src="images/The Marina.jpg" alt="Description of the experience">
+                        <span class="badge">The Marina</span>
+                        <button class="wishlist-button" aria-label="Add to wishlist">&#x2764;</button>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Environmentally-conscious restaurant plating sustainable Indian & Chinese
+                            style seafood.</h3>
+                        <div class="card-rating">
+                            <div class="rating-value">4.4</div>
+                            <span class="stars">★★★★☆</span>
+                            <span class="review-count">(3272)</span>
+                        </div>
+                        <div class="card-price">
+                            <span class="price-value"> <a href="https://share.google/8USZ861q1DeQpbDWA" target="_blank"><button>Site</button></a><br>| Seafood restaurant
+                                | </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image-wrapper">
+                        <img src="images/Geetham Veg Restaurant.jpg" alt="Description of the experience">
+                        <span class="badge">Geetham Veg Restaurant</span>
+                        <button class="wishlist-button" aria-label="Add to wishlist">&#x2764;</button>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">a premier vegetarian hang-out spot in Chennai, offering a wide range of
+                            delicious and authentic South Indian cuisine that is quick, fresh</h3>
+                        <div class="card-rating">
+                            <div class="rating-value">4.3</div>
+                            <span class="stars">★★★★☆</span>
+                            <span class="review-count">(24337)</span>
+                        </div>
+                        <div class="card-price">
+                            <span class="price-value"> <a href="https://share.google/Qr9nI4Vw3hTYgTehT" target="_blank"><button>Site</button></a><br>| Vegetarian
+                                restaurant | </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </section>
+        <!-- best hotels and restaurants section end -->
+        <!-- future boxes -->
+        <div class="feature-box">
+            <div class="media-column">
+                <img src="images/two people atv ride.jpg" alt="Two people riding ATVs in the desert, wearing helmets"
+                    class="feature-image">
+            </div>
+
+            <div class="content-column">
+                <p class="sponsored-tag">
+                    <span class="logo-placeholder"> <img src="images/logo.svg" alt="Wanderlab Logo"></span> Sponsored by
+                    <a href="#" class="sponsor-link">Wanderlab</a>
+                </p>
+
+                <h2 class="feature-headline">Watch The Wanderer</h2>
+
+                <p class="feature-description">
+                    Tripadvisor’s award-winning travel series, now streaming on Amazon Prime Video
+                </p>
+
+                <a href="#" class="cta-button">Learn more</a>
+            </div>
+        </div>
+        <!-- future boxes end -->
+    </main>
+    <!-- footer--clone -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-title">About Tripadvisor</h3>
+                <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Resources and Policies</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Trust & Safety</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Tripadvisor Technology</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-title">Explore</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Write a review</a></li>
+                    <li><a href="#">Add a Place</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Travellers' Choice</a></li>
+                    <li><a href="#">Help Centre</a></li>
+                    <li><a href="#">Travel Stories</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-title">Do Business With Us</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Owners & DMO/CVB</a></li>
+                    <li><a href="#">Business Advantage</a></li>
+                    <li><a href="#">Sponsored Placements</a></li>
+                    <li><a href="#">Advertise with Us</a></li>
+                    <li><a href="#">Access our Content API</a></li>
+                </ul>
+                <h3 class="footer-title">Get The App</h3>
+                <ul class="footer-links">
+                    <li><a href="#">iPhone App</a></li>
+                    <li><a href="#">Android App</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section footer-site-links">
+                <h3 class="footer-title">Tripadvisor Sites</h3>
+                <p class="site-link-description">Book tours and attraction tickets on <a href="#"
+                        class="viator-link">Viator</a></p>
+            </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+            <div class="legal-info">
+                <img src="images/logo.svg" alt="Logo" class="footer-logo">
+                <p class="copyright">© 2025 Tripadvisor clone Divagar All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy and Cookies Statement</a>
+                    <a href="#">Cookie consent</a>
+                    <a href="#">Site Map</a>
+                    <a href="#">How the site works</a>
+                    <a href="#">Contact us</a>
+                    <a href="#">Accessibility Statement</a>
+                </div>
+                <p class="region-note">
+                    This is the version of our website addressed to speakers of English in India. If you are a resident
+                    of another country or region, please select the appropriate version of Tripadvisor for your country
+                    or region in the drop-down menu....
+                    <a href="#" class="read-more">Read more &darr;</a>
+                </p>
+            </div>
+
+            <div class="settings-and-social">
+                <div class="language-settings">
+                    <select class="settings-dropdown">
+                        <option>₹ INR</option>
+                        <option>$ USD</option>
+                        <option>€ EUR</option>
+                        <option>£ GBP</option>
+                        <option>¥ JPY</option>
+                        <option>₩ KRW</option>
+                        <option>R$ BRL</option>
+
+                    </select>
+                    <select class="settings-dropdown">
+                        <option>India</option>
+                        <option>USA</option>
+                        <option>UK</option>
+                        <option>Germany</option>
+                        <option>France</option>
+                        <option>Australia</option>
+                        <option>Canada</option>
+                        <option>Japan</option>
+                        <option>South Korea</option>
+                        <option>China</option>
+                        <option>Brazil</option>
+                        <option>Mexico</option>
+                        <option>South Africa</option>
+                        <option>United Arab Emirates</option>
+
+
+                    </select>
+                </div>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><span class="social-icon"><i class="fa-brands fa-facebook"
+                                style="color: #000000;"></i></span></a>
+                    <a href="#" aria-label="Twitter"><span class="social-icon"><i class="fa-brands fa-x-twitter"
+                                style="color: #000000;"></i></span></a>
+                    <a href="#" aria-label="Pinterest"><span class="social-icon"><i class="fa-brands fa-pinterest"
+                                style="color: #000000;"></i></span></a>
+                    <a href="#" aria-label="Instagram"><span class="social-icon"><i class="fa-brands fa-instagram"
+                                style="color: #000000;"></i></span></a>
+                    <a href="#" aria-label="YouTube"><span class="social-icon"><i class="fa-brands fa-youtube"
+                                style="color: #000000;"></i></span></a>
+                    <a href="#" aria-label="TikTok"><span class="social-icon"><i class="fa-brands fa-tiktok"
+                                style="color: #000000;"></i></span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
